@@ -39,7 +39,6 @@ function useTypewriter(text: string, start: boolean, speed = 35) {
 
   useEffect(() => {
     if (!start) return;
-    setDisplayed("");
     let i = 0;
     const interval = setInterval(() => {
       i++;

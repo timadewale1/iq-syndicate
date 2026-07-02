@@ -11,10 +11,11 @@ export default function Container({
     <div
       className={`
         mx-auto
-        max-w-[1280px]
-        px-6
+        max-w-[1320px]
+        px-5
         md:px-8
-        lg:px-12
+        lg:px-10
+        xl:px-12
         ${className}
       `}
     >

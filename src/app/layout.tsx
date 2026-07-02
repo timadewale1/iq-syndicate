@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Manrope, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
+import SiteFooter from "@/components/layout/SiteFooter";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -14,9 +15,19 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "IQ Syndicate",
+  metadataBase: new URL("https://iqsyndicate.com"),
+  title: {
+    default: "IQ Syndicate",
+    template: "%s | IQ Syndicate",
+  },
   description:
-    "Mobilizing capital, enabling growth, and creating sustainable impact.",
+    "IQ Syndicate is an African-led climate finance platform focused on advisory, technical assistance, blended finance, and portfolio aggregation.",
+  openGraph: {
+    title: "IQ Syndicate",
+    description:
+      "Enabling African-led climate ventures to scale through patient capital and structured support.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -27,14 +38,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`
-          ${manrope.variable}
-          ${cormorant.variable}
-          antialiased
-        `}
+        className={`${manrope.variable} ${cormorant.variable} antialiased`}
       >
         <Header />
-        {children}
+        <main>{children}</main>
+        <SiteFooter />
       </body>
     </html>
   );

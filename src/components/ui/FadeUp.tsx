@@ -6,24 +6,35 @@ import { fadeUp } from "@/lib/animations";
 type Props = {
   children: React.ReactNode;
   className?: string;
+  delay?: number;
+  duration?: number;
+  distance?: number;
+  once?: boolean;
+  amount?: number;
 };
 
 export default function FadeUp({
   children,
   className,
+  delay = 0,
+  duration = 0.7,
+  distance = 22,
+  once = true,
+  amount = 0.22,
 }: Props) {
   return (
     <motion.div
       className={className}
-      variants={fadeUp}
+      variants={fadeUp(distance)}
       initial="hidden"
       whileInView="visible"
       viewport={{
-        once: true,
-        amount: 0.25,
+        once,
+        amount,
       }}
       transition={{
-        duration: 0.7,
+        delay,
+        duration,
         ease: [0.22, 1, 0.36, 1],
       }}
     >

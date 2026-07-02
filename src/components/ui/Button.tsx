@@ -14,17 +14,17 @@ export default function Button({
 }: ButtonProps) {
   const styles = {
     primary: `
-      bg-brand-gold
+      bg-primary
       text-white
-      hover:bg-brand-goldDark
+      hover:bg-primary-light
       border-transparent
     `,
 
     secondary: `
       border
-      border-brand-border
-      text-brand-charcoal
-      hover:bg-brand-sand
+      border-border
+      text-charcoal
+      hover:bg-sand
     `,
   };
 
