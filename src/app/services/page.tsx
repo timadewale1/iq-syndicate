@@ -59,9 +59,7 @@ const taModules = [
 
 const facilityStats = [
   { value: "USD $10M", label: "Target Fund Size (Nigeria)" },
-  { value: "17%", label: "Return target per annum on debt tranche" },
-  { value: "65%", label: "Philanthropic first-loss tranche" },
-  { value: "3–5%", label: "Equity conversion reference from TA" },
+  { value: "5-10 years", label: "Equity conversion reference from TA" },
 ];
 
 const aggregationSteps = [
@@ -96,7 +94,7 @@ const aggregationSteps = [
   {
     n: "05",
     title: "Term Negotiation & Close",
-    body: "we advisors support founders and investors through term sheet negotiation and final close.",
+    body: "Our advisors support founders and investors through term sheet negotiation and final close.",
     image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&q=80",
     alt: "Deal closing - handshake between parties",
   },
