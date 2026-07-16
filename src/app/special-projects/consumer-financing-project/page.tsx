@@ -23,7 +23,7 @@ const steps = [
   { icon: ClipboardCheck, title: "Apply",                    body: "Get assessed through our quick, Open-Banking-powered credit tool." },
   { icon: Wallet,          title: "Pay 20% Upfront",           body: "Your contribution secures your commitment and unlocks the financing." },
   { icon: Wrench,          title: "Get Installed",             body: "An accredited partner installs a quality-assured solar system tailored to your energy needs." },
-  { icon: Repeat,          title: "Repay at 9% Interest",       body: "Monthly installments are matched to your income or business revenue — typically lower than what you already spend on fuel." },
+  { icon: Repeat,          title: "Repay at 9% Interest",       body: "Monthly installments are matched to your income or business revenue, typically lower than what you already spend on fuel." },
   { icon: Home,            title: "Own It Outright",           body: "Once you complete repayment, the system is yours. Your former fuel spend becomes permanent savings." },
 ];
 
@@ -113,7 +113,7 @@ export default function ConsumerFinancingPage() {
                 Over 85 million Nigerians lack reliable electricity. Households
                 and businesses spend billions each year running petrol and
                 diesel generators, yet the solar systems that could replace them
-                remain out of reach — not because the technology is unavailable,
+                remain out of reach, not because the technology is unavailable,
                 or because demand is lacking, but because affordable financing
                 does not exist. Commercial interest rates of{" "}
                 <span className="font-semibold text-charcoal">27–33%</span> can
@@ -128,7 +128,6 @@ export default function ConsumerFinancingPage() {
               { v: "85M+",   l: "Nigerians lack reliable electricity" },
               { v: "27–33%", l: "Typical commercial interest rates on solar financing" },
               { v: "2x",     l: "Cost increase caused by high-rate financing" },
-              { v: "9%",     l: "IQ Syndicate's interest rate for eligible customers" },
             ].map((s, i) => (
               <Reveal key={s.l} direction="up" delay={i * 90}>
                 <div className="card-float rounded-2xl bg-cream p-6 shadow-md shadow-black/5">
@@ -197,7 +196,7 @@ export default function ConsumerFinancingPage() {
                 A standard solar system meets up to 85% of your energy needs.
                 Because your monthly installment is typically lower than what
                 you already spend on generator fuel, you are cash-flow positive
-                from month one — you start saving before you finish paying.
+                from month one, you start saving before you finish paying.
               </p>
               <p className="mt-4 text-[15px] leading-7 text-ink/74">
                 No new money required. We simply convert your existing fuel

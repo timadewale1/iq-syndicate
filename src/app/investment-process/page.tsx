@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 const steps = [
   {
     n: "01",
-    title: "Founder Identification & Origination",
+    title: "Project Identification & Origination",
     body: "The team actively scouts ventures via accelerators, referrals, and climate events. Six eligibility criteria are applied: sector focus, geographic scope, founder profile, revenue stage, climate impact type, and ESG risk profile.",
     image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=80",
     alt: "Climate founders at an accelerator event being scouted and identified",
@@ -327,7 +327,7 @@ export default function InvestmentProcessPage() {
               Three fit-for-stage instruments
             </h2>
               <p className="mt-5 text-[15px] leading-7 text-white/76">
-              we design instruments that match the venture's
+              We design instruments that match the venture's
               stage, not the other way around. Each instrument provides
                 a clear return pathway for the firm while aligning
                 incentives directly with venture success.
@@ -377,10 +377,9 @@ export default function InvestmentProcessPage() {
           <div className="mb-20">
             <Reveal>
               <p className="mb-8 max-w-2xl text-[15px] leading-7 text-ink/72">
-                we focus exclusively on ventures operating
+                We focus exclusively on ventures operating
                 within climate infrastructure and climate-adjacent
-                sectors, as defined by Nigeria's Energy Transition Plan
-                and NDC sectors.
+                sectors.
               </p>
             </Reveal>
 

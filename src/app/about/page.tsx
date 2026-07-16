@@ -122,7 +122,7 @@ const theoryOfChange = [
   {
     icon: Sprout,
     label: "If",
-    body: "Early-stage African climate ventures receive structured technical assistance and fit-for-purpose capital,",
+    body: "Early-stage African climate infrastructures receive structured technical assistance and fit-for-purpose capital,",
   },
   {
     icon: TrendingUp,
@@ -165,7 +165,7 @@ export default function AboutPage() {
       {/* ───────────────────────── HERO ─────────────────────────
           Bespoke split layout for this page - text on a warm surface,
           a floating framed photograph instead of a full-bleed image. */}
-      <section className="relative overflow-hidden bg-cream pb-10 pt-24 md:pb-14 md:pt-28">
+      <section className="relative overflow-hidden bg-cream pb-10 pt-12 md:pb-14 md:pt-14">
         <div
           className="pointer-events-none absolute -right-32 -top-32 h-[480px] w-[480px] rounded-full bg-gold-light/25 blur-3xl"
           aria-hidden
@@ -271,10 +271,10 @@ export default function AboutPage() {
                   className="mt-3 leading-tight text-white"
                   style={{ fontSize: "clamp(1.35rem, 2.1vw, 1.8rem)", lineHeight: 1.2 }}
                 >
-                  A thriving, self-sustaining climate venture ecosystem.
+                  A thriving, self-sustaining climate Infrastructure ecosystem.
                 </h2>
                 <p className="mt-4 max-w-md text-[14.5px] leading-7 text-white/82">
-                  Where African-led climate ventures scale globally,
+                  Where African-led climate infrastructure scale globally,
                   delivering sustainable prosperity and measurable
                   investment returns to communities and investors alike.
                 </p>

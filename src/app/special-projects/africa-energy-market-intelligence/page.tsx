@@ -21,15 +21,15 @@ const deliverables = [
   { icon: TrendingUp,    title: "Investment Pipeline Intelligence",  body: "Discover funding opportunities, track capital flows, and benchmark comparable transactions." },
   { icon: Shield,        title: "Policy & Regulatory Monitoring",    body: "Stay current on regulatory changes across multiple jurisdictions with AI-powered alerts." },
   { icon: FileText,      title: "Market Reports & Briefs",           body: "Automated country-level intelligence briefs, thematic deep dives, and annual market reports." },
-  { icon: MessageSquare, title: "Custom Queries",                    body: "Ask the platform exactly what you need — natural-language queries across the full data corpus." },
+  { icon: MessageSquare, title: "Custom Queries",                    body: "Ask the platform exactly what you need, natural-language queries across the full data corpus." },
   { icon: Globe2,        title: "Open Community Access",             body: "A free public tier ensures energy-poor communities can track investment commitments in their regions." },
 ];
 
 const markets = [
-  { name: "Nigeria",   flag: "🇳🇬", desc: "Largest economy; active pipeline; energy transition leadership" },
-  { name: "Uganda",    flag: "🇺🇬", desc: "High energy access gap; strong donor engagement; growing solar market" },
-  { name: "Tanzania",  flag: "🇹🇿", desc: "Significant rural electrification need; Swahili-speaking market" },
-  { name: "Ethiopia",  flag: "🇪🇹", desc: "Large population; Amharic data coverage; hydropower transition" },
+  { name: "Nigeria",  desc: "Largest economy; active pipeline; energy transition leadership" },
+  { name: "Uganda",   desc: "High energy access gap; strong donor engagement; growing solar market" },
+  { name: "Tanzania", desc: "Significant rural electrification need; Swahili-speaking market" },
+  { name: "Ethiopia", desc: "Large population; Amharic data coverage; hydropower transition" },
 ];
 
 const stats = [
@@ -102,7 +102,7 @@ export default function AfricaEnergyIntelligencePage() {
               <p className="text-[15.5px] leading-7 text-ink/74">
                 Africa holds immense renewable energy potential, yet attracts
                 less than 3% of global energy investment. The data needed to
-                unlock capital exists — but it is scattered across hundreds of
+                unlock capital exists, but it is scattered across hundreds of
                 sources: government portals, donor databases, news outlets, and
                 institutional reports. This delays projects, leads to missed
                 funding windows, and leaves{" "}
@@ -144,7 +144,7 @@ export default function AfricaEnergyIntelligencePage() {
               <p className="mt-5 text-[15px] leading-7 text-white/76">
                 The Africa Energy Market Intelligence Platform uses artificial
                 intelligence to collect, validate, and structure renewable energy
-                data from across African markets — transforming scattered
+                data from across African markets, transforming scattered
                 information into real-time, actionable intelligence for capital
                 providers, policymakers, and project developers.
               </p>
@@ -240,7 +240,6 @@ export default function AfricaEnergyIntelligencePage() {
             {markets.map((m, i) => (
               <Reveal key={m.name} direction="up" delay={i * 90}>
                 <div className="card-float rounded-2xl bg-primary-light p-7 shadow-xl shadow-black/20">
-                  <p className="text-5xl">{m.flag}</p>
                   <h3 className="mt-4 text-2xl text-white">{m.name}</h3>
                   <p className="mt-2 text-[13px] leading-5 text-white/70">{m.desc}</p>
                 </div>
@@ -249,28 +248,6 @@ export default function AfricaEnergyIntelligencePage() {
           </div>
         </Container>
       </section>
-
-      {/* ── By the Numbers ───────────────────────────────────── */}
-      <section className="bg-cream py-10 md:py-14">
-        <Container>
-          <Reveal className="mb-12 text-center">
-            <p className="institutional-eyebrow">By the Numbers</p>
-            <h2 className="mt-4 text-charcoal">Scale from day one.</h2>
-          </Reveal>
-
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {stats.map((s, i) => (
-              <Reveal key={s.label} direction="up" delay={i * 90}>
-                <div className="card-float rounded-2xl bg-white p-8 text-center shadow-lg shadow-black/8">
-                  <p className="font-heading text-5xl text-primary md:text-6xl">{s.value}</p>
-                  <p className="mt-4 text-[13px] leading-5 text-ink/60">{s.label}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </Container>
-      </section>
-
       {/* ── Stay Informed ────────────────────────────────────── */}
       <section className="bg-white py-10 md:py-14">
         <Container>

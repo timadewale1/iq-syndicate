@@ -236,7 +236,7 @@ export default function HomePage() {
               Despite hundreds of billions committed to climate finance
               globally, indigenous African climate entrepreneurs are
               systematically excluded from the capital they need. The
-              investment criteria of commercial banks, venture capital
+              investment criteria of commercial banks, private
               funds, and development finance institutions are calibrated
               for mature businesses, leaving early-stage African climate
               founders invisible to the very capital markets that should
